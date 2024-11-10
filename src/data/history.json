@@ -1,0 +1,37 @@
+[
+  {
+    "role": "Desarrollador FullStack",
+    "organisation": "ProAplicaciones",
+    "startDate": "Octubre, 2021",
+    "endDate": "Presente",
+    "experiences": [
+    "Reducción de tiempos de despliegue en más del 70% con CI/CD.",
+    "Integración de componentes y APIs usando Docker y AWS."
+  ],
+    "imageSrc": "history/proaplicaciones.jpeg"
+  },
+  {
+    "role": "Desarrollador Backend",
+    "organisation": "Tutree, Inc",
+    "startDate": "Enero, 2021",
+    "endDate": "Octubre, 2021",
+    "experiences": [
+      "Desarrollo de funcionalidades backend utilizando Go y Python.",
+      "Optimización de APIs REST para mejorar la comunicación entre sistemas.",
+      "Mantenimiento y escalabilidad de proyectos existentes."
+    ],
+    "imageSrc": "history/tutree.jpeg"
+  },
+  {
+    "role": "Especialista en TI",
+    "organisation": "Banco Bicentenario C.A.",
+    "startDate": "Marzo, 2018",
+    "endDate": "Enero, 2021",
+   "experiences": [
+    "Desarrollo y mantenimiento de aplicaciones usando Python y Django.",
+    "Optimización y gestión de bases de datos con PostgreSQL y MySQL.",
+    "Creación de soluciones de software eficientes y seguras."
+  ],
+    "imageSrc": "history/bancoBicentenario.png"
+  }
+]
