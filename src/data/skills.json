@@ -1,0 +1,51 @@
+[
+
+  {
+    "title": "Java",
+    "imageSrc": "skills/java.webp"
+  },
+  {
+    "title": "Go",
+    "imageSrc": "skills/go.webp"
+  },
+  {
+    "title": "Python",
+    "imageSrc": "skills/python.webp"
+  },
+  {
+    "title": "Ruby",
+    "imageSrc": "skills/ruby.webp"
+  },
+  {
+    "title": "Spring Boot",
+    "imageSrc": "skills/spring.png"
+  },
+  {
+    "title": "Angular",
+    "imageSrc": "skills/angular.webp"
+  },
+  {
+    "title": "React",
+    "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "PostgreSQL",
+    "imageSrc": "skills/postgresql.png"
+  },
+  {
+    "title": "MariaDB",
+    "imageSrc": "skills/mariadb.webp"
+  },
+  {
+    "title": "MongoDB",
+    "imageSrc": "skills/mongodb.png"
+  },
+  {
+    "title": "Docker",
+    "imageSrc": "skills/docker.webp"
+  },
+  {
+    "title": "AWS",
+    "imageSrc": "skills/aws.jpg"
+  }
+]
