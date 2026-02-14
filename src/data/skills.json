@@ -1,51 +1,62 @@
 [
-
   {
     "title": "Java",
-    "imageSrc": "skills/java.webp"
+    "imageSrc": "skills/java.webp",
+    "icon": "coffee"
   },
   {
     "title": "Go",
-    "imageSrc": "skills/go.webp"
+    "imageSrc": "skills/go.webp",
+    "icon": "data_object"
   },
   {
     "title": "Python",
-    "imageSrc": "skills/python.webp"
+    "imageSrc": "skills/python.webp",
+    "icon": "code"
   },
   {
     "title": "Ruby",
-    "imageSrc": "skills/ruby.webp"
+    "imageSrc": "skills/ruby.webp",
+    "icon": "diamond"
   },
   {
     "title": "Spring Boot",
-    "imageSrc": "skills/spring.png"
+    "imageSrc": "skills/spring.png",
+    "icon": "bolt"
   },
   {
     "title": "Angular",
-    "imageSrc": "skills/angular.webp"
+    "imageSrc": "skills/angular.webp",
+    "icon": "change_history"
   },
   {
     "title": "React",
-    "imageSrc": "skills/react.png"
+    "imageSrc": "skills/react.png",
+    "icon": "sync"
   },
   {
     "title": "PostgreSQL",
-    "imageSrc": "skills/postgresql.png"
+    "imageSrc": "skills/postgresql.png",
+    "icon": "database"
   },
   {
     "title": "MariaDB",
-    "imageSrc": "skills/mariadb.webp"
+    "imageSrc": "skills/mariadb.webp",
+    "icon": "storage"
   },
   {
     "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
+    "imageSrc": "skills/mongodb.png",
+    "icon": "description"
   },
   {
     "title": "Docker",
-    "imageSrc": "skills/docker.webp"
+    "imageSrc": "skills/docker.webp",
+    "icon": "deployed_code"
   },
   {
     "title": "AWS",
-    "imageSrc": "skills/aws.jpg"
+    "imageSrc": "skills/aws.jpg",
+    "icon": "cloud"
   }
 ]

@@ -1,0 +1,67 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { Navbar } from "../../components/Navbar";
+import Footer from "../../components/Footer.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) =>
+    new Date(b.data.publishedAt).getTime() -
+    new Date(a.data.publishedAt).getTime()
+);
+---
+
+<BaseLayout
+  title="Blog | Oswaldo Montaño"
+  description="Blog de Oswaldo Montaño sobre desarrollo de software, backend, DevOps y tecnología."
+>
+  <Navbar client:load />
+  <main class="pt-16">
+    <section class="py-20">
+      <div class="max-w-3xl mx-auto px-4">
+        <h1 class="text-3xl font-bold mb-10">Blog</h1>
+        {
+          posts.length === 0 ? (
+            <p class="text-lg text-slate-500">Próximamente nuevos artículos.</p>
+          ) : (
+            <div class="space-y-4">
+              {posts.map((post) => (
+                <a
+                  href={`/blog/${post.id}`}
+                  class="block p-6 bg-white dark:bg-card-dark border border-slate-200 dark:border-border-dark rounded-2xl hover:border-primary hover:shadow-lg hover:shadow-primary/5 transition-all group"
+                >
+                  <h2 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                    {post.data.title}
+                  </h2>
+                  <p class="text-sm text-slate-500 dark:text-slate-400 mb-4 leading-relaxed">
+                    {post.data.description}
+                  </p>
+                  <div class="flex items-center gap-3 flex-wrap">
+                    <time
+                      datetime={post.data.publishedAt.toISOString()}
+                      class="text-xs font-mono text-slate-400"
+                    >
+                      {post.data.publishedAt.toLocaleDateString("es-ES", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                    </time>
+                    <div class="flex gap-2">
+                      {post.data.tags.map((tag) => (
+                        <span class="px-2 py-0.5 rounded bg-primary/10 text-primary text-[10px] font-mono font-bold uppercase tracking-widest">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          )
+        }
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

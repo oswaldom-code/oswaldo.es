@@ -1,0 +1,28 @@
+:root {
+  /* Palette — GitHub/Vercel dark */
+  --color-primary: #3c83f6;
+  --color-primary-hover: #5b9af7;
+  --color-primary-10: rgba(60, 131, 246, 0.1);
+  --color-primary-20: rgba(60, 131, 246, 0.2);
+  --color-primary-30: rgba(60, 131, 246, 0.3);
+
+  --color-bg: #0a0a0b;
+  --color-bg-alt: #0d1117;
+  --color-card: #161b22;
+  --color-border: #30363d;
+
+  --color-text: #e6edf3;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+  --color-white: #ffffff;
+
+  /* Fonts */
+  --font-sans: "Inter Variable", "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Transitions & radii */
+  --transition: 150ms ease;
+  --radius: 16px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+}

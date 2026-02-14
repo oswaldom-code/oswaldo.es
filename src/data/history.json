@@ -1,24 +1,41 @@
 [
   {
-    "role": "Desarrollador FullStack",
-    "organisation": "ProAplicaciones",
-    "startDate": "Octubre, 2021",
+    "role": "Desarrollador Backend",
+    "organisation": "Grupo TECDATA Engineering",
+    "client": "GRUPODIA",
+    "startDate": "Febrero, 2025",
     "endDate": "Presente",
+    "location": "Madrid, España · Híbrido",
     "experiences": [
-    "Reducción de tiempos de despliegue en más del 70% con CI/CD.",
-    "Integración de componentes y APIs usando Docker y AWS."
-  ],
+      "Desarrollo de servicios backend y APIs REST en cliente GRUPODIA.",
+      "Implementación de soluciones con Swagger, Linux y stack backend moderno."
+    ],
+    "imageSrc": "history/tecdata.jpeg"
+  },
+  {
+    "role": "Desarrollador Full Stack",
+    "organisation": "Proaplicaciones",
+    "startDate": "Octubre, 2021",
+    "endDate": "Febrero, 2025",
+    "location": "Bogotá, Colombia · Remoto",
+    "experiences": [
+      "Diseño y desarrollo de sistemas backend escalables y seguros con Go, Python, Ruby, PostgreSQL y MySQL.",
+      "Implementación de APIs RESTful de alto rendimiento e integración de componentes backend.",
+      "Reducción de tiempos de despliegue en más del 70% mediante CI/CD con Docker, GitHub y AWS.",
+      "Colaboración con equipos multidisciplinarios para la entrega de soluciones robustas y a la vanguardia."
+    ],
     "imageSrc": "history/proaplicaciones.jpeg"
   },
   {
     "role": "Desarrollador Backend",
-    "organisation": "Tutree, Inc",
+    "organisation": "Tutree, Inc.",
     "startDate": "Enero, 2021",
     "endDate": "Octubre, 2021",
+    "location": "Los Ángeles, EE.UU.",
     "experiences": [
-      "Desarrollo de funcionalidades backend utilizando Go y Python.",
-      "Optimización de APIs REST para mejorar la comunicación entre sistemas.",
-      "Mantenimiento y escalabilidad de proyectos existentes."
+      "Desarrollo de funcionalidades backend con Go y Python, incluyendo frameworks como Gin-gonic y Cobra.",
+      "Implementación y optimización de APIs REST para comunicación eficiente entre servicios.",
+      "Mantenimiento y escalabilidad de proyectos existentes con Git, PostgreSQL, Docker y Linux."
     ],
     "imageSrc": "history/tutree.jpeg"
   },
@@ -27,11 +44,37 @@
     "organisation": "Banco Bicentenario C.A.",
     "startDate": "Marzo, 2018",
     "endDate": "Enero, 2021",
-   "experiences": [
-    "Desarrollo y mantenimiento de aplicaciones usando Python y Django.",
-    "Optimización y gestión de bases de datos con PostgreSQL y MySQL.",
-    "Creación de soluciones de software eficientes y seguras."
-  ],
+    "location": "San Juan de Los Morros, Venezuela",
+    "experiences": [
+      "Desarrollo y mantenimiento de aplicaciones con Python y Django para operaciones del banco.",
+      "Gestión y optimización de bases de datos con PostgreSQL y MySQL."
+    ],
     "imageSrc": "history/bancoBicentenario.png"
+  },
+  {
+    "role": "Líder de Departamento - Informática",
+    "organisation": "Consejo Legislativo del Estado Guárico",
+    "startDate": "Enero, 2017",
+    "endDate": "Marzo, 2018",
+    "location": "San Juan de Los Morros, Venezuela",
+    "experiences": [
+      "Liderazgo del equipo de TI y gestión integral de la infraestructura de red y computación.",
+      "Desarrollo de software a medida con PHP, Python y MySQL para operaciones internas.",
+      "Mantenimiento del sitio web institucional y supervisión de prácticas de desarrollo con GitHub y Docker."
+    ],
+    "imageSrc": "history/cleg.png"
+  },
+  {
+    "role": "Instructor de Programación",
+    "organisation": "Universidad Nacional Experimental Rómulo Gallegos",
+    "startDate": "Diciembre, 2012",
+    "endDate": "Diciembre, 2017",
+    "location": "San Juan de Los Morros, Venezuela",
+    "experiences": [
+      "Impartición de cursos de programación en Java, PostgreSQL, MySQL y Linux combinando teoría y práctica.",
+      "Desarrollo y actualización constante del material del curso acorde a las tendencias de la industria.",
+      "Orientación y asesoría a estudiantes en proyectos y desarrollo profesional."
+    ],
+    "imageSrc": "history/unerg.png"
   }
 ]

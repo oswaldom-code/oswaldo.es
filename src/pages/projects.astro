@@ -1,0 +1,59 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Navbar } from "../components/Navbar";
+import ProjectCard from "../components/ProjectCard.astro";
+import Footer from "../components/Footer.astro";
+import projects from "../data/projects.json";
+
+const projectImages = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/projects/*.*",
+  { eager: true }
+);
+
+function getProjectImage(imageSrc: string): string {
+  const key = `../assets/${imageSrc}`;
+  return projectImages[key]?.default.src ?? `/${imageSrc}`;
+}
+---
+
+<BaseLayout
+  title="Proyectos | Oswaldo Montaño"
+  description="Proyectos de desarrollo de software de Oswaldo Montaño."
+>
+  <Navbar client:load />
+  <main class="pt-16">
+    <section class="py-20 bg-slate-50 dark:bg-background-dark">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <h1 class="text-3xl font-bold mb-2">Proyectos Seleccionados</h1>
+            <p class="text-slate-500">Casos de éxito y herramientas open source.</p>
+          </div>
+          <a
+            class="text-primary font-bold flex items-center gap-1 hover:underline"
+            href="https://github.com/oswaldom-code"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver todo en GitHub <span class="material-symbols-outlined text-sm">open_in_new</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {
+            projects.map((project) => (
+              <ProjectCard
+                title={project.title}
+                imageSrc={getProjectImage(project.imageSrc)}
+                description={project.description}
+                skills={project.skills}
+                demo={project.demo}
+                source={project.source}
+              />
+            ))
+          }
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

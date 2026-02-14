@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter Variable", "Inter", sans-serif;
+}
+
+.code-font {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.glass {
+  background: rgba(16, 23, 34, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
