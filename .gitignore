@@ -1,5 +1,20 @@
-# package
+# dependencies
 /node_modules
 
 # build
 /dist
+
+# astro
+.astro/
+
+# environment
+.env
+.env.*
+
+# editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

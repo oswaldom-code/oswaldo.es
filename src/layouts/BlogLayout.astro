@@ -1,0 +1,63 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import { Navbar } from "../components/Navbar";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  publishedAt: Date;
+  tags: string[];
+}
+
+const { title, description, publishedAt, tags } = Astro.props;
+
+const formattedDate = publishedAt.toLocaleDateString("es-ES", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<BaseLayout title={`${title} | Oswaldo Montaño`} description={description}>
+  <Navbar client:load />
+  <main class="pt-16">
+    <article class="py-20 max-w-3xl mx-auto px-4">
+      <a href="/blog" class="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-primary transition-colors mb-8">
+        <span class="material-symbols-outlined text-base">arrow_back</span>
+        Volver al blog
+      </a>
+      <header class="mb-12">
+        <h1 class="text-4xl md:text-5xl font-black tracking-tight mb-4 leading-tight">{title}</h1>
+        <div class="flex items-center gap-3 flex-wrap">
+          <time datetime={publishedAt.toISOString()} class="text-xs font-mono text-slate-400">
+            {formattedDate}
+          </time>
+          <div class="flex gap-2">
+            {tags.map((tag) => (
+              <span class="px-2 py-0.5 rounded bg-primary/10 text-primary text-[10px] font-mono font-bold uppercase tracking-widest">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      </header>
+      <div class="prose prose-invert prose-lg max-w-none
+        prose-headings:font-bold prose-headings:tracking-tight
+        prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4
+        prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
+        prose-p:text-slate-400 prose-p:leading-relaxed
+        prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+        prose-code:bg-card-dark prose-code:border prose-code:border-border-dark prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-mono
+        prose-pre:bg-card-dark prose-pre:border prose-pre:border-border-dark prose-pre:rounded-xl
+        prose-blockquote:border-l-primary prose-blockquote:text-slate-500
+        prose-li:text-slate-400
+        prose-strong:text-white
+        prose-img:rounded-xl
+        prose-hr:border-border-dark">
+        <slot />
+      </div>
+    </article>
+  </main>
+  <Footer />
+</BaseLayout>
